@@ -244,36 +244,25 @@ t**3 - 2*t + 1                 # polinomio puro
 malware-ode-simulator/
 │
 ├── 📄 README.md                        ← Este archivo
-├── 📄 LICENSE                          ← Licencia MIT
 ├── 📄 requirements.txt                 ← Dependencias Python
 ├── 📄 .gitignore                       ← Archivos ignorados por Git
 │
 ├── 📂 src/                             ← Código fuente principal
-│   └── 📄 malware_ode_simulator.py     ← Aplicación completa (911 líneas)
+│   └── 📄 ciberseguridad_EDO.py        ← Aplicación completa (901 líneas)
 │
 ├── 📂 docs/                            ← Documentación
-│   ├── 📄 explicacion_codigo.md        ← Explicación detallada del código
 │   ├── 📄 fundamento_matematico.md     ← Teoría de EDOs y analogía
 │   └── 📂 img/                         ← Capturas de pantalla
 │       ├── 🖼️ screenshot_main.png
 │       ├── 🖼️ screenshot_subamortiguado.png
+│       ├── 🖼️ screenshot_sobreamortiguado.png
 │       ├── 🖼️ screenshot_critico.png
-│       └── 🖼️ screenshot_dirac.png
+│       └── 🖼️ screenshot_impulso.png
 │
-├── 📂 examples/                        ← Ejemplos de uso
-│   ├── 📄 scenario_subamortiguado.py   ← Escenario A: firewall débil
-│   ├── 📄 scenario_sobreamortiguado.py ← Escenario B: respuesta lenta
-│   ├── 📄 scenario_critico.py          ← Escenario C: configuración óptima
-│   └── 📄 custom_functions.py          ← Ejemplos de f(t) personalizadas
 │
-├── 📂 scripts/                         ← Utilidades de empaquetado
-│   ├── 📄 build_exe_windows.bat        ← Script para generar .exe en Windows
-│   └── 📄 build_exe_linux.sh           ← Script para generar binario en Linux
-│
-└── 📂 tests/                           ← Pruebas unitarias
-    ├── 📄 test_solver_simbolico.py     ← Tests del solver SymPy
-    ├── 📄 test_variacion_params.py     ← Tests de Variación de Parámetros
-    └── 📄 test_integracion_ode.py      ← Tests de la integración numérica
+├── 📂 script/                         ← Utilidades de empaquetado
+    ├── 📄 build_exe_windows.bat        ← Script para generar .exe en Windows
+
 ```
 
 ---
@@ -434,14 +423,6 @@ Las contribuciones son bienvenidas. Para contribuir:
 3. Hacer commit: `git commit -m "Agrega soporte para f(t) = log(t)"`
 4. Push a la rama: `git push origin feature/nueva-funcion`
 5. Abrir un Pull Request
-
----
-
-## 📄 Licencia
-
-Distribuido bajo licencia MIT. Ver [`LICENSE`](LICENSE) para más detalles.
-
----
 
 ## 👤 Autor
 
